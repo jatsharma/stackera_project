@@ -242,7 +242,7 @@ class BundleETHPrice(Resource):
 
 
 ###################################################################################################
-# Create scheduler instance to schedule update_token_pairs job
+# Create scheduler instance to schedule update_token_details job
 scheduler = BackgroundScheduler()
 # Add job to update token info every 30 minutes.
 scheduler.add_job(func=update_tokens_details, trigger='interval', minutes=30)
